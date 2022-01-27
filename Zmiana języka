@@ -1,0 +1,9 @@
+Ustawianie polskiego języka na serwerze ubuntu:
+dpkg-reconfigure locales
+wybieramy PL UTF-8
+(wybieramy spacją)
+Następnie znowy wybieramy z listy PL
+Może zadziałać i bez restartu serwera (ale mi nie chciało) -> więc restart serwera na home pl
+Po restarcie i po zalogowaniu się na serwer, można sprawdzić czy jakie języki lokalne zostały wgrane:
+locale-gen
+będzie język polski utf-8 i powinno działać.
