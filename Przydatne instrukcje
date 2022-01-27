@@ -1,8 +1,8 @@
 Wysyłanie plików z kompa na serwer:
 https://monovm.com/blog/how-to-upload-files-to-a-linux-vps-from-windows/
-SCP "ściżka pliku na kompie do wysłania" root@ip "lokalizacja na serwerze"
+SCP "ściżka pliku na kompie do wysłania" root@ip:"lokalizacja na serwerze"
 lokalizacja na serwerze najcześciej zacyzna się od /root 
-
+SCP wow.py root@1.1.1.1:/root/piaskownica/wow_prog
 
 
 Ustawianie polskiego języka na serwerze ubuntu:
