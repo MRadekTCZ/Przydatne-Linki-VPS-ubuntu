@@ -1,0 +1,39 @@
+clear
+x="Dzien Dobry"
+#Trzeba pisać chmod +x  #Trzeba pisać chmod +x "nazwa pliku" Aby nadać uprawnienia do otwierania!!!!!!!
+echo $x
+pwd
+ls
+mkdir scripts
+echo tekst do pliku pierwszego > scripts/a.txt
+echo tekst nadpisany przy użyciu dwóch strzalek >> scripts/a.txt
+echo   " "
+echo   " "
+pwd> scripts/b.txt
+ls>>scripts/b.txt
+
+cd scripts
+
+echo "Który plik chcesz wyświetlić - 1 czy 2?"
+read what_p
+
+if [ "$what_p" == "1" ]; then
+        echo
+        echo "Teraz wyświetli się zawartość pliku a:"
+        cat a.txt
+        echo "  "
+fi
+
+if [ "$what_p" == "2" ]; then
+echo "Ile linijek chcesz wyświetlić?"
+read header
+echo "Teraz wyświetlą się pierwsze $header linijki pliku b:"
+head -n $header b.txt
+echo
+echo "Dla porównania cały plik b:"
+cat b.txt
+fi
+
+if [[ "$what_p" != "1" && "$What_p" != "2" ]]; then
+echo "Nic nie wyświetlono"
+fi
